@@ -85,12 +85,28 @@
 					"list": false,
 					"enum": "",
 					"validate": ""
+				},
+				{
+					"id": "b4b6358e-d348-4da4-870d-ab5b16e69cc2",
+					"name": "vendes",
+					"datatype": "5fcbb123-cee6-4b1c-9a95-d8724b369b94",
+					"param": "",
+					"pk": false,
+					"nn": true,
+					"comment": "",
+					"defaultvalue": "",
+					"data": "",
+					"list": true,
+					"enum": "",
+					"validate": ""
 				}
 			],
 			"relations": [
 				"cf486c90-8935-4825-a361-914a05ac5ca0"
 			],
-			"lines": [],
+			"lines": [
+				"5736cf39-4ce3-4f47-b710-c7b793053004"
+			],
 			"keys": [
 				{
 					"id": "22c70489-9608-4a7f-a533-fcb936086d3d",
@@ -134,9 +150,9 @@
 					"data": ""
 				},
 				{
-					"id": "a5a4b2e2-086f-4192-a752-18de4f0aa001",
-					"name": "nom",
-					"datatype": "string",
+					"id": "9a77a2ff-3b1c-4089-810b-c5dd74a53756",
+					"name": "infoPersonal",
+					"datatype": "8ab27ab7-18f7-4ca8-86d6-c8d2a24f3e64",
 					"param": "",
 					"pk": false,
 					"nn": true,
@@ -151,48 +167,6 @@
 					"id": "7bb273c1-38c0-4815-a0d3-ac8280e6a3c4",
 					"name": "direccio",
 					"datatype": "708d0034-9584-4c9d-8cbc-09f269fcaf81",
-					"param": "",
-					"pk": false,
-					"nn": true,
-					"comment": "",
-					"defaultvalue": "",
-					"data": "",
-					"list": false,
-					"enum": "",
-					"validate": ""
-				},
-				{
-					"id": "ac08112d-e771-4346-9df5-ae991490e101",
-					"name": "telefon",
-					"datatype": "string",
-					"param": "",
-					"pk": false,
-					"nn": true,
-					"comment": "",
-					"defaultvalue": "",
-					"data": "",
-					"list": false,
-					"enum": "",
-					"validate": ""
-				},
-				{
-					"id": "3d0cad23-6bd6-4bbe-9243-8069f021b9ff",
-					"name": "fax",
-					"datatype": "string",
-					"param": "",
-					"pk": false,
-					"nn": false,
-					"comment": "",
-					"defaultvalue": "",
-					"data": "",
-					"list": false,
-					"enum": "",
-					"validate": ""
-				},
-				{
-					"id": "ee901603-3fcb-458e-b287-6bab9fffe5e3",
-					"name": "nif",
-					"datatype": "string",
 					"param": "",
 					"pk": false,
 					"nn": true,
@@ -219,7 +193,9 @@
 				}
 			],
 			"relations": [],
-			"lines": [],
+			"lines": [
+				"5736cf39-4ce3-4f47-b710-c7b793053004"
+			],
 			"keys": [
 				{
 					"id": "82292c89-181a-4738-9343-dc7df502b9c0",
@@ -539,7 +515,7 @@
 				},
 				{
 					"id": "8b5243a9-906f-4827-9a13-5a4cccbfb382",
-					"name": "ulleres",
+					"name": "ullera",
 					"datatype": "0015d149-8a99-4b6a-b1e3-83d7e5749c04",
 					"param": "",
 					"pk": false,
@@ -831,7 +807,7 @@
 					"datatype": "string",
 					"param": "",
 					"pk": false,
-					"nn": false,
+					"nn": true,
 					"comment": "",
 					"defaultvalue": "",
 					"data": "",
@@ -845,6 +821,275 @@
 			"keys": [
 				{
 					"id": "8a7fce39-7f65-4f58-bc25-7d689f5acdc8",
+					"name": "Primary key",
+					"isPk": true,
+					"using": "na",
+					"cols": []
+				}
+			],
+			"indexes": [],
+			"embeddable": true,
+			"generate": true,
+			"generateCustomCode": true
+		},
+		"8ab27ab7-18f7-4ca8-86d6-c8d2a24f3e64": {
+			"id": "8ab27ab7-18f7-4ca8-86d6-c8d2a24f3e64",
+			"visible": false,
+			"name": "object",
+			"desc": "",
+			"estimatedSize": "",
+			"cols": [
+				{
+					"id": "81fa834f-df8c-488d-9531-03d178325de3",
+					"name": "nom",
+					"datatype": "string",
+					"param": "",
+					"pk": false,
+					"nn": true,
+					"comment": "",
+					"defaultvalue": "",
+					"data": "",
+					"list": false,
+					"enum": "",
+					"validate": ""
+				},
+				{
+					"id": "a8f2e9f2-01f5-43a9-b335-855b33a05f1b",
+					"name": "telefon",
+					"datatype": "string",
+					"param": "",
+					"pk": false,
+					"nn": true,
+					"comment": "",
+					"defaultvalue": "",
+					"data": "",
+					"list": false,
+					"enum": "",
+					"validate": ""
+				},
+				{
+					"id": "9176cb64-744e-46c1-8872-f9c225132cac",
+					"name": "fax",
+					"datatype": "string",
+					"param": "",
+					"pk": false,
+					"nn": true,
+					"comment": "",
+					"defaultvalue": "",
+					"data": "",
+					"list": false,
+					"enum": "",
+					"validate": ""
+				},
+				{
+					"id": "8c284c5f-9578-411b-9d11-f5b2add18689",
+					"name": "nif",
+					"datatype": "string",
+					"param": "",
+					"pk": false,
+					"nn": true,
+					"comment": "",
+					"defaultvalue": "",
+					"data": "",
+					"list": false,
+					"enum": "",
+					"validate": ""
+				}
+			],
+			"relations": [],
+			"lines": [],
+			"keys": [
+				{
+					"id": "1641d63b-d46f-4154-84e1-9752c5101487",
+					"name": "Primary key",
+					"isPk": true,
+					"using": "na",
+					"cols": []
+				}
+			],
+			"indexes": [],
+			"embeddable": true,
+			"generate": true,
+			"generateCustomCode": true
+		},
+		"5fcbb123-cee6-4b1c-9a95-d8724b369b94": {
+			"id": "5fcbb123-cee6-4b1c-9a95-d8724b369b94",
+			"visible": false,
+			"name": "object",
+			"desc": "",
+			"estimatedSize": "",
+			"cols": [
+				{
+					"id": "41e853a0-73d2-4b36-b047-742901ba4161",
+					"name": "_idVenda",
+					"datatype": "objectId",
+					"param": "",
+					"pk": true,
+					"nn": true,
+					"comment": "",
+					"defaultvalue": "",
+					"data": "",
+					"list": false,
+					"enum": "",
+					"validate": ""
+				},
+				{
+					"id": "f63d229a-b343-4a35-a84b-d56fb808b67a",
+					"name": "dataVenda",
+					"datatype": "date",
+					"param": "",
+					"pk": false,
+					"nn": true,
+					"comment": "",
+					"defaultvalue": "",
+					"data": "",
+					"list": false,
+					"enum": "",
+					"validate": ""
+				},
+				{
+					"id": "7b07a586-7270-4053-b692-345a93fdafcc",
+					"name": "empleat",
+					"datatype": "afc614be-3a06-4c28-9c25-02dc5b6aed3e",
+					"param": "",
+					"pk": false,
+					"nn": true,
+					"comment": "",
+					"defaultvalue": "",
+					"data": "",
+					"list": false,
+					"enum": "",
+					"validate": ""
+				},
+				{
+					"id": "0b04371f-7ba1-49fc-a682-67c872ece842",
+					"name": "productes",
+					"datatype": "8746efbd-2373-4a23-9968-dcdb286bbbbb",
+					"param": "",
+					"pk": false,
+					"nn": true,
+					"comment": "",
+					"defaultvalue": "",
+					"data": "",
+					"list": true,
+					"enum": "",
+					"validate": ""
+				}
+			],
+			"relations": [],
+			"lines": [],
+			"keys": [
+				{
+					"id": "07e42654-f6d0-4710-a9c0-14d0d38f93aa",
+					"name": "Primary key",
+					"isPk": true,
+					"using": "na",
+					"cols": [
+						{
+							"id": "9aa8d45e-c6d3-4b49-a059-0b8fef35b6ba",
+							"colid": "41e853a0-73d2-4b36-b047-742901ba4161"
+						}
+					]
+				}
+			],
+			"indexes": [],
+			"embeddable": true,
+			"generate": true,
+			"generateCustomCode": true
+		},
+		"afc614be-3a06-4c28-9c25-02dc5b6aed3e": {
+			"id": "afc614be-3a06-4c28-9c25-02dc5b6aed3e",
+			"visible": false,
+			"name": "object",
+			"desc": "",
+			"estimatedSize": "",
+			"cols": [
+				{
+					"id": "cc7b0bca-4e49-4ae5-a132-983bde1b8ad3",
+					"name": "nom",
+					"datatype": "string",
+					"param": "",
+					"pk": false,
+					"nn": true,
+					"comment": "",
+					"defaultvalue": "",
+					"data": "",
+					"list": false,
+					"enum": "",
+					"validate": ""
+				},
+				{
+					"id": "ada7adee-176e-4d7e-b679-8b3ab7c8e2c0",
+					"name": "cognom",
+					"datatype": "string",
+					"param": "",
+					"pk": false,
+					"nn": true,
+					"comment": "",
+					"defaultvalue": "",
+					"data": "",
+					"list": false,
+					"enum": "",
+					"validate": ""
+				}
+			],
+			"relations": [],
+			"lines": [],
+			"keys": [
+				{
+					"id": "9b81409d-9426-4865-bda6-1b8b5783ff73",
+					"name": "Primary key",
+					"isPk": true,
+					"using": "na",
+					"cols": []
+				}
+			],
+			"indexes": [],
+			"embeddable": true,
+			"generate": true,
+			"generateCustomCode": true
+		},
+		"8746efbd-2373-4a23-9968-dcdb286bbbbb": {
+			"id": "8746efbd-2373-4a23-9968-dcdb286bbbbb",
+			"visible": false,
+			"name": "object",
+			"desc": "",
+			"estimatedSize": "",
+			"cols": [
+				{
+					"id": "014eafb1-7ce8-4653-abbe-9efaebe15150",
+					"name": "idUllera",
+					"datatype": "objectId",
+					"param": "",
+					"pk": false,
+					"nn": true,
+					"comment": "",
+					"defaultvalue": "",
+					"data": "",
+					"list": false,
+					"enum": "",
+					"validate": ""
+				},
+				{
+					"id": "27435329-a248-47a9-98a4-07d1225ea553",
+					"name": "quantitat",
+					"datatype": "int",
+					"param": "",
+					"pk": false,
+					"nn": true,
+					"comment": "",
+					"defaultvalue": "",
+					"data": "",
+					"list": false,
+					"enum": "",
+					"validate": ""
+				}
+			],
+			"relations": [],
+			"lines": [],
+			"keys": [
+				{
+					"id": "1d7f1acf-3973-4215-a94c-cfc95a6895bb",
 					"name": "Primary key",
 					"isPk": true,
 					"using": "na",
@@ -885,7 +1130,22 @@
 		}
 	},
 	"notes": {},
-	"lines": {},
+	"lines": {
+		"5736cf39-4ce3-4f47-b710-c7b793053004": {
+			"id": "5736cf39-4ce3-4f47-b710-c7b793053004",
+			"visible": true,
+			"name": "proveidor-clients",
+			"desc": "vincula el _idUlleres amb el idUllera del array de productes",
+			"style": "solid",
+			"parent": "8a7e63b6-3b4d-4c95-91a7-3b5c2427c781",
+			"child": "f25c75e6-75c8-425a-b28d-17e3eccf30d1",
+			"lineColor": "#f44336",
+			"markerStart": "none",
+			"markerEnd": "arrowEnd",
+			"linegraphics": "basic",
+			"generate": true
+		}
+	},
 	"model": {
 		"name": "S2O2N1E1",
 		"id": "4f73abe1-c80d-41c7-a158-a28af58aed2d",
@@ -916,7 +1176,7 @@
 		"def_validationAction": "na",
 		"def_collation": "",
 		"def_others": "",
-		"lastSaved": "19/1/2023",
+		"lastSaved": "Fri Jan 20 2023 10:10:25 GMT+0100 (GMT+01:00)",
 		"modelScriptsDir": "D:\\FORMACIO\\01-ITACADEMY\\EXERCICIS\\SPRINT_2\\S2_03\\S203N1E1\\S203N1E1 - optica - SCRIPT",
 		"modelPdfReportPath": "D:\\FORMACIO\\01-ITACADEMY\\EXERCICIS\\SPRINT_2\\S2_03\\S203N1E1\\S2O2N1E1 - optica - ESQUEMA.pdf"
 	},
@@ -936,10 +1196,10 @@
 			"diagramItems": {
 				"f25c75e6-75c8-425a-b28d-17e3eccf30d1": {
 					"referencedItemId": "f25c75e6-75c8-425a-b28d-17e3eccf30d1",
-					"x": 158,
-					"y": 241,
-					"gHeight": 333,
-					"gWidth": 255,
+					"x": 104,
+					"y": 153,
+					"gHeight": 495,
+					"gWidth": 289,
 					"color": "#ffffff",
 					"background": "#03a9f4",
 					"resized": false,
@@ -947,10 +1207,10 @@
 				},
 				"8a7e63b6-3b4d-4c95-91a7-3b5c2427c781": {
 					"referencedItemId": "8a7e63b6-3b4d-4c95-91a7-3b5c2427c781",
-					"x": 499,
-					"y": 164,
-					"gHeight": 513,
-					"gWidth": 348,
+					"x": 539,
+					"y": 141,
+					"gHeight": 531,
+					"gWidth": 342,
 					"color": "#ffffff",
 					"background": "#03a9f4",
 					"resized": false,
@@ -1025,6 +1285,50 @@
 				"a01ea01c-82e4-498e-a2cf-f1c3ff2523bf": {
 					"referencedItemId": "a01ea01c-82e4-498e-a2cf-f1c3ff2523bf",
 					"x": 600,
+					"y": 40,
+					"gHeight": 60,
+					"gWidth": 160,
+					"color": "#ffffff",
+					"background": "#8bc34a",
+					"resized": false,
+					"autoExpand": true
+				},
+				"8ab27ab7-18f7-4ca8-86d6-c8d2a24f3e64": {
+					"referencedItemId": "8ab27ab7-18f7-4ca8-86d6-c8d2a24f3e64",
+					"x": 400,
+					"y": 40,
+					"gHeight": 60,
+					"gWidth": 160,
+					"color": "#ffffff",
+					"background": "#8bc34a",
+					"resized": false,
+					"autoExpand": true
+				},
+				"5fcbb123-cee6-4b1c-9a95-d8724b369b94": {
+					"referencedItemId": "5fcbb123-cee6-4b1c-9a95-d8724b369b94",
+					"x": 400,
+					"y": 40,
+					"gHeight": 60,
+					"gWidth": 160,
+					"color": "#ffffff",
+					"background": "#8bc34a",
+					"resized": false,
+					"autoExpand": true
+				},
+				"afc614be-3a06-4c28-9c25-02dc5b6aed3e": {
+					"referencedItemId": "afc614be-3a06-4c28-9c25-02dc5b6aed3e",
+					"x": 400,
+					"y": 40,
+					"gHeight": 60,
+					"gWidth": 160,
+					"color": "#ffffff",
+					"background": "#8bc34a",
+					"resized": false,
+					"autoExpand": true
+				},
+				"8746efbd-2373-4a23-9968-dcdb286bbbbb": {
+					"referencedItemId": "8746efbd-2373-4a23-9968-dcdb286bbbbb",
+					"x": 400,
 					"y": 40,
 					"gHeight": 60,
 					"gWidth": 160,
