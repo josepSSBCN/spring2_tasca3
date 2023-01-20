@@ -1,0 +1,6 @@
+
+db.createCollection( 'clients', {validator: {$jsonSchema: {bsonType: 'object',title:'clients',required: [         'infoPersonal',          'direccio',          'dataRegistre',          'clientRecomanador',          'idEmpleat'],properties: {infoPersonal: {bsonType: 'object',
+title:'object',required: [         'nom',          'cognoms',          'telefon'],properties: {nom: {bsonType: 'string'},cognoms: {bsonType: 'string'},telefon: {bsonType: 'string'},email: {bsonType: 'string'}}},direccio: {bsonType: 'object',
+title:'object',required: [         'carrer',          'numero',          'pis',          'porta',          'ciutat',          'coidPostal',          'poblacio'],properties: {carrer: {bsonType: 'string'},numero: {bsonType: 'int'},pis: {bsonType: 'int'},porta: {bsonType: 'int'},ciutat: {bsonType: 'string'},coidPostal: {bsonType: 'int'},poblacio: {bsonType: 'string'}}},dataRegistre: {bsonType: 'date', description:'Data de registre del client'},clientRecomanador: {bsonType: 'objectId'},idEmpleat: {bsonType: 'int', description:'Empleat que ha realitzat la venda'}}         }      },
+autoIndexId:true
+});  
